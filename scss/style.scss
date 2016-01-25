@@ -5,6 +5,7 @@ body {
 
 #team-members {
   clear: both;
+  transition: all 1s ease-in-out;
 
   .member {
     float: left;
@@ -16,10 +17,23 @@ body {
   .member img {
     width: 195px;
     height: 195px;
+    border-radius: 150px;
+    box-shadow: 10px 10px 5px #312e42;
+    -ms-transform: scale(.9);
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
   }
 
   .member div.name {
     text-align: center;
+  }
+}
+
+#team-members {
+  .member img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
